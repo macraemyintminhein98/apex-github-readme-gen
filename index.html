@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>READMEGen - Professional GitHub READMEs</title>
+    <meta name="description" content="Generate stunning GitHub READMEs effortlessly.">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <style>
+        body { display: flex; flex-direction: column; min-height: 100vh; }
+        main { flex-grow: 1; padding: 2rem 0; width: min(100% - 2rem, 80ch); margin: 0 auto; }
+        footer { text-align: center; padding: 1rem 0; }
+        .cta { text-align: center; margin-top: 2rem; }
+        hgroup { margin-bottom: 2rem; }
+        button[type="submit"] { width: 100%; }
+    </style>
+</head>
+<body>
+    <nav class="container">
+        <ul><li><strong>READMEGen</strong></li></ul>
+        <ul><li><a href="#">Templates</a></li><li><a href="#">About</a></li></ul>
+    </nav>
+    <main class="container">
+        <article>
+            <hgroup>
+                <h1>Craft Perfect GitHub READMEs in Seconds</h1>
+                <h2>Generate professional, engaging README files with ease.</h2>
+            </hgroup>
+            <form>
+                <label for="project-name">Project Name</label>
+                <input type="text" id="project-name" name="project-name" placeholder="My Awesome Project" required>
+
+                <label for="description">Short Description</label>
+                <textarea id="description" name="description" placeholder="A brief overview of your project..." rows="3"></textarea>
+
+                <label for="features">Key Features (comma separated)</label>
+                <input type="text" id="features" name="features" placeholder="Feature 1, Feature 2, Feature 3">
+
+                <label for="template">Choose a Template</label>
+                <select id="template" name="template">
+                    <option value="standard">Standard</option>
+                    <option value="minimal">Minimal</option>
+                    <option value="badge-heavy">Badge-Heavy</option>
+                </select>
+
+                <p class="cta">
+                    <button type="submit" onclick="alert('This is a demo! Purchase READMEGen to unlock.'); return false;">Generate My README for $9.99</button>
+                </p>
+            </form>
+        </article>
+    </main>
+    <footer class="container">
+        <small>Powered by APEX &amp; Pico.css | &copy; 2024 READMEGen</small>
+    </footer>
+</body>
+</html>
